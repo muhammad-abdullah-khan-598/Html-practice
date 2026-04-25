@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+  </head>
+  <body>
+    <h2 align="center">Student Registration Form</h2>
+    <form>
+      
+      <label for="student_name">Student Name</label><br>
+      <input type="text" size="40"id="student_name" name="student_name" cols="42" required/><br><br>
+      <table>
+        <tr>
+          <td><label for="mobile_no"></label>Mobile no.</td>
+          <td><label for="email">Email id</label></td>
+        </tr>
+        <tr>
+          <td><input type="tel" size="17"id="mobile_no" name="mobile_no" required/></td>
+          <td><input type="email" size="17"id="email" name="email_address" required/></td>
+        </tr>
+      </table><br>
+      <table>
+        <tr>
+          <td><label for="father_name"></label>Father Name</td>
+          <td><label for="mother_name">Mother Name</label></td>
+        </tr>
+        <tr>
+          <td><input type="text" size="17"id="father_name" name="father_name" required/></td>
+          <td><input type="text" size="17" id="mother_name" name="mother_name" required/></td>
+        </tr>
+      </table><br>
+      
+      <table>
+        <tr>
+          <td><label for="course"></label>Select Course</td>
+          <td><label for="dob">Date of Birth</label></td>
+        </tr>
+        <tr>
+          <td><select name="course" required>
+            <option selected disabled>Select</option>
+            <option value="web_development">Web Development</option>
+            <option value="graphics_designing">Graphics Designing</option>
+            <option value="digital_marketing">Digital Marketing</option>
+            <option value="data_analytics">Data Analytics</option>
+            <option value="video_editing">Video Editing</option>
+            <option value="cyber_security">Cyber Security</option>
+            
+          </select></td>
+          <td><input type="date" id="dob" name="dob" required></td>
+        </tr>
+      </table><br>
+      
+      <div>
+      <label>Gender</label><br>
+      <label for="male">
+        <input type="radio" name="gender" value="male" id="male" required/>Male
+      </label>
+      <label for="female">
+        <input type="radio" name="gender" value="female" id="female" required/>Female
+      </label><br><br>
+      
+      <label>Student Photo</label><br>
+      <label for="photo">
+        <input type="file" name="student_photo" accept="image/*" id="photo" required/>
+      </label><br><br>
+      </div>
+      
+      <div>
+      <label>Select Branch</label><br>
+      <label for="CSE">
+         <input type="checkbox" id="CSE" name="branch"
+      value="CSE" />CSE
+      </label>
+      
+       <label for="IT">
+         <input type="checkbox" id="IT" name="branch"
+      value="IT" />IT
+      </label>
+     
+       <label for="ECE">
+         <input type="checkbox" id="ECE" name="branch"
+      value="ECE" />ECE
+      </label>
+     
+       <label for="Civil">
+         <input type="checkbox" id="Civil" name="branch"
+      value="Civil" />Civil
+      </label><br><br>
+      </div>
+      
+      <div>
+        <label for="address">Address</label><br>
+        <textarea id="address" name="address" rows="4" cols="42"required></textarea>
+      </div><br><br>
+      
+      <div>
+        <button align="center" type="submit">Submit</button>
+       <button type="reset">Reset</button>
+      </div>
+     
+
+    </form>
+  </body>
+    
+    
+</html>
+    
+    
+    
